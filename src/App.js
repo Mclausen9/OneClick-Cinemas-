@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from "react-router-dom";
 import { GoogleOAuthProvider } from '@react-oauth/google';
-import { AuthProvider } from '../auth/AuthProvider';
-import ProtectedRoute from '../components/ProtectedRoute';
-import LoginPage from './LoginPage';
-import HomePage from './HomePage';
+import { AuthProvider } from './auth/AuthProvider';
+import ProtectedRoute from './components/ProtectedRoute';
+import LoginPage from './pages/LoginPage';
+import HomePage from './pages/HomePage';
 import CreditCardForm from './pages/CreditCardForm';
-import Subscriptions from '../components/Subscriptions';
+import Subscriptions from './components/Subscriptions';
 
 const CART_STORAGE_KEY = "eztech_cart";
 
